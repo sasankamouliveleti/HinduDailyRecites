@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DailyRecites",
-    "slug": "DailyRecites",
+    "name": "Hindu Daily Recite",
+    "slug": "HinduDailyRecite",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,21 +10,34 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1A1A2E"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mouliveleti.hindudailyrecite",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#1A1A2E"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-web-browser"
+    ],
+    "scheme": "hindudailyrecite",
+    "extra": {
+      "eas": {
+        "projectId": "eae140e6-0d54-4ab4-99b5-874285df9f9f"
+      }
     }
   }
 }
